@@ -9,267 +9,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: beige;
+    <title>Ordering food</title>
+    <style>
+    .container{
+       background:url('https://th.bing.com/th/id/OIP.qT9Z7KZkltCzg8EdCCzepAHaHa?pid=ImgDet&w=1024&h=1024&rs=1')
     }
-.nav  li a{
-    color: rgb(243, 242, 242);
-    font: 1.5em sans-serif;
-}
-</style>
-
+    .container h3{
+        color: antiquewhite;
+        font-size: 40px;
+        font-style: italic;
+    }
+    .col-md-6 tr th td{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    table tr td, tr th {
+        color: white;
+        font-size: 20px;
+    }
+    </style>
+</head>
 <body>
-    <div class="row" > 
-           <div class="col-md-3" style="padding: 0px;" >
-            <nav class="navbar navbar-inverse"style="height: 1000px;background:url('https://wallpapercave.com/wp/wp2356164.jpg')no-repeat center center/cover ;">
-                <div class="navbarcontainer" style="height:50px">
-                      <a class="navbar-brand" href="#" style="color:rgb(236, 207, 111) ; font: 2.0em sans-serif ;"> HOME</a>
-                </div>
-                <ul class="nav" >
-                    <li><a href="#">PHOTOS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT US</a>></li>
-                </ul>
-                &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp  
-                <a href="https://accounts.google.com/signup/v2/createaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-33b77f1a91d2b7a41f5cc6c50602c-ccc3c2be5ae98fc97ac860f969af5c6883db33e6&flowName=GlifWebSignIn&flowEntry=SignUp" ><span class="glyphicon glyphicon-envelope" style="color:bisque ;"></span></a>
-                &nbsp &nbsp &nbsp &nbsp
-                <a href="#"><span class="glyphicon glyphicon-search" style="color:bisque; "> </span></a>
-                &nbsp &nbsp &nbsp &nbsp
-                <a href="#"><span class="glyphicon glyphicon-print" style="color:bisque;"></span></a>
-                <ul class="pager">
-                    <li class="previous"><a href="#">Previous</a></li>
-                    <li class="next"><a href="#">Next</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-         
-            <div class="col-md-9" style="padding:0px;position: relative;">
-                <img src="https://d.newsweek.com/en/full/1524142/cardio-workout.jpg" alt="" width="1000px" height="700px">
-                <div class="text" style="    position: absolute; top: 204px;left: 225px;">
-                    <p style="color:rgb(234, 157, 62); font: 1.5em sans-serif;" ><b> The pain you feel today will be the strength you feel tomorrow.</b></p>
-                    <p style="color: #e2310ae6;font: 1em sans-serif;text-align: center;" ><b>   A little progress each day adds up to big results.</b></p><br>
-                    <button type="button" class="btn btn=primary btn-block" style="color:rgb(245, 245, 252) ; font:2em sans-serif;background-color: rgb(171, 72, 72);">Pain is temporary <br> Pride lasts forever </button>
-                </div>
+    <div class="container">
+        <h1 class="text-center"> <kbd>LIST OF ITEMS</kbd> </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center"> DRINK</h3>
+                <table class="table table-hover" >
+                    <thead>
+                        <tr>
+                            <th ><b>ITEMS</b></th>
+                            <th> </th>
+                            <th ><b>PRICES</b></th>
+                        </tr>
+                        <tr>
+                            <td data-toogle="tooltip" data-placement="top" title="The mojito is one of the world's most popular cocktails. It's a simple mixed drink of rum, mint, lime, sugar, and club soda, and a muddler and stirring spoon are the only tools required." >The Real Mojito</td>
+                            <td><img src="https://th.bing.com/th/id/OIP.2A--f1MyGLkgHrqycY6R1gHaEK?pid=ImgDet&rs=1" class="img-circle" width="50px" height="50px" alt=""></td>
+                            <td >90</td>
+                        </tr>
+                        <tr>
+                            <td >Jamaican Rum Punch</td>
+                            <td><img src="https://th.bing.com/th/id/R.2999bdb75dfc09cd2a7b47a3b98ab9c3?rik=6HekDnNiM7y4gg&riu=http%3a%2f%2fwww.thecookingmom.com%2fwp-content%2fuploads%2f2015%2f07%2fJamaicanRumPunch.jpg&ehk=QFP0GrHZYX7KFVQirTkc85WxjtQBHqcHCU5zwD8estg%3d&risl=&pid=ImgRaw&r=0" class="img-circle" width="50px" height="50px" alt=""></td>
+                            <td >130</td>
+                        <tr>
+                            <td  data-toogle="tooltip" data-placement="bottom" title="A cosmopolitan, or simply cosmo, is a vodka cocktail made with triple sec, cranberry juice, and lime juice. The drink was invented in the 1930s, but rose in popularity in the 1990s" >Cosmopolitan Cocktail</td>
+                            <td><img src="https://th.bing.com/th/id/OIP.UGX6AZpSrj1enY0fNSEO8AHaLH?pid=ImgDet&rs=1" class="img-circle" width="50px" height="50px" alt=""></td>
+                            <td >120</td>
+                        </tr>
+                        <tr>
+                            <td data-toogle="tolltip" data-placement="right" title="A strawberry margarita is the perfect summer cocktail! Made with frozen strawberries and limeade concentrate, this 5-ingredient margarita is ready to refresh you in just minutes. For an extra-sweet presentation, dip the rims of your margarita glasses in powdered sugar">Ultimate Frozen Strawberry Margarita</td>
+                            <td><img src="https://i.pinimg.com/originals/2c/29/d2/2c29d23be65250975cad1e72942e6bd2.jpg" class="img-circle" width="50px" height="50px" alt=""></td>
+                            <td > 150</td>
+                        </tr>
+                    </thead>
+                </table>
             </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container">
-                <h2 style="text-align:center;" ><b>PHOTOS</b></h2>  
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-              
-                  <!-- Wrapper for slides --> 
-                   <div class="carousel-inner">
-                    <div class="item active ">
-                        <img src="https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/media/starters-aesthetic-main.jpg" alt="Los Angeles" style="width:100%; ">
-                        <div class="carousel-caption">
-                            <h3>Leg Press</h3>
-                            <p>The leg press gets a lot of flack in the fitness community. Most folks  tool for isolating the leg muscles </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="https://wallpaperaccess.com/full/804850.jpg" alt="Chicago" style="width:100%;">
-                        <div class="carousel-caption">
-                          <h3>Muscular Build Strength</h3>
-                          <p>Muscular strength is determined by how much force you can exert or how much weight you can lift.</p>
-                        </div>
-                      </div>
-                    
-                  
-                    <div class="item">
-                      <img src="https://th.bing.com/th/id/OIP.pPo99MST1DqDDJyzXs23SwHaEK?pid=ImgDet&w=1200&h=675&rs=1" alt="New york" style="width:100%; ">
-                      <div class="carousel-caption">
-                        <h3>Battle rope  </h3>
-                        <p>Great for Burning Fat and Cardio and Provide Better Balance and Coordination</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              
+            <din class="col-md-6">
+                <h3 class="text-center">BREAKFAST</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th> ITEMS</th>
+                            <th> </th>
+                            <th>PRICES</th>
+                        </tr>
+                        <tr>
+                            <td> Apple Ricotta Pancakes</td>
+                            <td><img src="https://i.pinimg.com/736x/06/ec/6d/06ec6ddcc6e179bf47c0a3820675095f--ricotta-pancakes.jpg" class="img-rounded" width="50px" height="50px" alt=""></td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Parmesan Cloud Eggs</td>
+                            <td><img src="https://th.bing.com/th/id/R.d4291eb9aeb54209b38a52decc5712f3?rik=Yesbvmc%2fahV%2fFw&riu=http%3a%2f%2fkaleforniakravings.com%2fwp-content%2fuploads%2f2019%2f03%2fEgg-Clouds-8.jpg&ehk=VsORDrZ5DT6Ka%2f4zixN6HgImxXALeEXR%2fxJxe1npPqE%3d&risl=&pid=ImgRaw&r=0" class="img-rounded" width="50px" height="50px" alt=""></td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Blue Corn Waffles Rancheros</td>
+                            <td><img src="https://th.bing.com/th/id/OIP.bwslRNKt2dbiuYkjhIWFvAAAAA?pid=ImgDet&rs=1" class="img-rounded" width="50px" height="50px" alt=""></td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>West Coast Avocado Toast</td>
+                            <td><img src="https://media.healthyfood.com/wp-content/uploads/2016/11/avo.jpg" class="img-rounded" width="50px" height="50px" alt=""></td>
+                            <td>180</td>
+                        </tr>
+                    </thead>
+                </table>
+            </din>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-
+    <div class="container">
+        <div class="col-md-6">
+            <h3 class="text-center">LUNCH</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ITEMS</th>
+                            <th></th>
+                            <th>PRICES</th>
+                        </tr>
+                        <tr>
+                        <td> Chana Kulcha</td>
+                        <td ><img src="https://i.pinimg.com/736x/84/ca/fb/84cafb5d90cc1d051023adeaae81a351.jpg" class="img-rounded" alt="" width="50px" height="50px"></td>
+                        <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>Gujarati Kadhi</td>
+                            <td ><img src="https://th.bing.com/th/id/OIP.HRHaokXhfaorTXR-gCUuOwHaLO?pid=ImgDet&rs=1" class="img-rounded" alt="" width="50px" height="50px"></td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Allahabad Ki Tehri</td>
+                            <td ><img src="https://www.eastcoastdaily.in/wp-content/uploads/2018/12/tehri-768x403.jpg" class="img-rounded" alt="" width="50px" height="50px"></td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>Paneer Achaari</td>
+                            <td ><img src="https://www.whiskaffair.com/wp-content/uploads/2015/04/Achari-Paneer-1.jpg" class="img-rounded" alt="" width="50px" height="50px"></td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Laccha Paratha</td>
+                            <td ><img src="https://th.bing.com/th/id/OIP.YJyPyrgrff_rr0BBtFatfAHaLG?pid=ImgDet&rs=1" class="img-rounded" alt="" width="50px" height="50px"></td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Tandoori roti</td>
+                            <td ><img src="https://th.bing.com/th/id/OIP.DHQgmKCR1rItAqazrUc-swHaLH?pid=ImgDet&rs=1" class="img-rounded" alt="" width="50px" height="50px"></td>
+                            <td>30</td>
+                        </tr>
+                    </thead>
+             </table>
         </div>
         <div class="col-md-6">
-            <div class="formgroup" style="text-align:center ;">
-                <label for="NAME">NAME:</label>
-                <input type="text" class="form-control" id="NAME" placeholder="Enter your Name" name="name">
-                <label for="ADDRESS">ADDRESS:</label>
-                <input type="text" class="form-control" id="ADDRESS" placeholder="Enter your address" name="address">
-                <label for="CONTACT">CONTACT:</label>
-                <input type="Number" class="form-control" id="CONTACT" placeholder="Enter your Number" name="number">
-                <label for="EMAIL">EMAIL:</label>
-                <input type="text" class="form-control" id="EMAIL" placeholder="Enter your email" name="email"><BR></BR>
-                <button type="button" class="btn btn-primary btn-block">SUMBIT NOW</button>
-            </div>
-        </div>
-        <div class="col-md-3">  
-        </div>
-        
-    </div>
-    <footer style="text-align:center">Rajat Varshney</footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: beige;
-    }
-.nav  li a{
-    color: rgb(243, 242, 242);
-    font: 1.5em sans-serif;
-}
-</style>
-
-<body>
-    <div class="row" > 
-           <div class="col-md-3" style="padding: 0px;" >
-            <nav class="navbar navbar-inverse"style="height: 1000px;background:url('https://wallpapercave.com/wp/wp2356164.jpg')no-repeat center center/cover ;">
-                <div class="navbarcontainer" style="height:50px">
-                      <a class="navbar-brand" href="#" style="color:rgb(236, 207, 111) ; font: 2.0em sans-serif ;"> HOME</a>
-                </div>
-                <ul class="nav" >
-                    <li><a href="#">PHOTOS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT US</a>></li>
-                </ul>
-                &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp  
-                <a href="https://accounts.google.com/signup/v2/createaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-33b77f1a91d2b7a41f5cc6c50602c-ccc3c2be5ae98fc97ac860f969af5c6883db33e6&flowName=GlifWebSignIn&flowEntry=SignUp" ><span class="glyphicon glyphicon-envelope" style="color:bisque ;"></span></a>
-                &nbsp &nbsp &nbsp &nbsp
-                <a href="#"><span class="glyphicon glyphicon-search" style="color:bisque; "> </span></a>
-                &nbsp &nbsp &nbsp &nbsp
-                <a href="#"><span class="glyphicon glyphicon-print" style="color:bisque;"></span></a>
-                <ul class="pager">
-                    <li class="previous"><a href="#">Previous</a></li>
-                    <li class="next"><a href="#">Next</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-         
-            <div class="col-md-9" style="padding:0px;position: relative;">
-                <img src="https://d.newsweek.com/en/full/1524142/cardio-workout.jpg" alt="" width="1000px" height="700px">
-                <div class="text" style="    position: absolute; top: 204px;left: 225px;">
-                    <p style="color:rgb(234, 157, 62); font: 1.5em sans-serif;" ><b> The pain you feel today will be the strength you feel tomorrow.</b></p>
-                    <p style="color: #e2310ae6;font: 1em sans-serif;text-align: center;" ><b>   A little progress each day adds up to big results.</b></p><br>
-                    <button type="button" class="btn btn=primary btn-block" style="color:rgb(245, 245, 252) ; font:2em sans-serif;background-color: rgb(171, 72, 72);">Pain is temporary <br> Pride lasts forever </button>
-                </div>
-            </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container">
-                <h2 style="text-align:center;" ><b>PHOTOS</b></h2>  
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-              
-                  <!-- Wrapper for slides --> 
-                   <div class="carousel-inner">
-                    <div class="item active ">
-                        <img src="https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/media/starters-aesthetic-main.jpg" alt="Los Angeles" style="width:100%; ">
-                        <div class="carousel-caption">
-                            <h3>Leg Press</h3>
-                            <p>The leg press gets a lot of flack in the fitness community. Most folks  tool for isolating the leg muscles </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="https://wallpaperaccess.com/full/804850.jpg" alt="Chicago" style="width:100%;">
-                        <div class="carousel-caption">
-                          <h3>Muscular Build Strength</h3>
-                          <p>Muscular strength is determined by how much force you can exert or how much weight you can lift.</p>
-                        </div>
-                      </div>
-                    
-                  
-                    <div class="item">
-                      <img src="https://th.bing.com/th/id/OIP.pPo99MST1DqDDJyzXs23SwHaEK?pid=ImgDet&w=1200&h=675&rs=1" alt="New york" style="width:100%; ">
-                      <div class="carousel-caption">
-                        <h3>Battle rope  </h3>
-                        <p>Great for Burning Fat and Cardio and Provide Better Balance and Coordination</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              
+            <h3 class="text-center">DINNER</h3>
+            <table class="table ">
+            <thead>
+                <tr>
+                    <th>ITEMS</th>
+                    <th></th>
+                    <th>PRICES</th>
+                </tr>
+                <tr>
+                <td> Masala Dosa</td>
+                <td ><img src="https://th.bing.com/th/id/OIP.UnU-Nc7KAW_EYqedR4SWvAHaDO?w=273&h=152&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="img-circle" alt="" width="50px" height="50px"></td>
+                <td>150</td>
+                </tr>
+                <tr>
+                    <td>Pav Bhaji</td>
+                    <td ><img src="https://www.thestatesman.com/wp-content/uploads/2019/07/pav-bhaji.jpg" class="img-circle" alt="" width="50px" height="50px"></td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Bhakhri Pizza</td>
+                    <td ><img src="https://th.bing.com/th/id/OIP.em-xHbxUF4Z5aOrmjQ33cwHaE8?w=231&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="img-circle" alt="" width="50px" height="50px"></td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>Hanoi Style Soba Noodles</td>
+                    <td ><img src="https://c.ndtvimg.com/2022-09/1jsu8038_noodles_625x300_28_September_22.jpg" class="img-circle" alt="" width="50px" height="50px"></td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Sindhi Biryani </td>
+                    <td ><img src="https://i0.wp.com/www.mareenasrecipecollections.com/wp-content/uploads/2012/01/sindhi-biryani-recipe-12992-dish.1024x1024.jpg?fit=590%2C406" class="img-circle" alt="" width="50px" height="50px"></td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Pizza Baked Potatoes </td>
+                    <td ><img src="https://th.bing.com/th/id/OIP.qUpjlvwiQG1mwj8-b4HyHwHaHa?pid=ImgDet&rs=1" class="img-circle" alt="" width="50px" height="50px"></td>
+                    <td>299</td>
+                </tr>
+            </thead>
+     </table>
+</div>       
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-
-        </div>
-        <div class="col-md-6">
-            <div class="formgroup" style="text-align:center ;">
-                <label for="NAME">NAME:</label>
-                <input type="text" class="form-control" id="NAME" placeholder="Enter your Name" name="name">
-                <label for="ADDRESS">ADDRESS:</label>
-                <input type="text" class="form-control" id="ADDRESS" placeholder="Enter your address" name="address">
-                <label for="CONTACT">CONTACT:</label>
-                <input type="Number" class="form-control" id="CONTACT" placeholder="Enter your Number" name="number">
-                <label for="EMAIL">EMAIL:</label>
-                <input type="text" class="form-control" id="EMAIL" placeholder="Enter your email" name="email"><BR></BR>
-                <button type="button" class="btn btn-primary btn-block">SUMBIT NOW</button>
-            </div>
-        </div>
-        <div class="col-md-3">  
-        </div>
-        
-    </div>
-    <footer style="text-align:center">Rajat Varshney</footer>
 </body>
 </html>
